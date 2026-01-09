@@ -7,44 +7,28 @@
 </head>
 <body>
 
-  <!-- Top panel -->
-  <header class="topbar">
-    <h1>My Website</h1>
-  </header>
+<header class="topbar">
+  <h1>My Website</h1>
+</header>
 
-  <!-- Page layout -->
-  <div class="container">
+<div class="container">
 
-    <!-- Left panel -->
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#" onclick="showChapter(1)">Chapter 1</a></li>
-        <li><a href="#" onclick="showChapter(2)">Chapter 2</a></li>
-        <li><a href="#" onclick="showChapter(3)">Chapter 3</a></li>
-      </ul>
-    </nav>
+  <nav class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="chapter1.html">Chapter 1</a></li>
+      <li><a href="chapter2.html">Chapter 2</a></li>
+      <li><a href="chapter3.html">Chapter 3</a></li>
+    </ul>
+  </nav>
 
-    <!-- Main content -->
-    <main class="content" id="content">
-      <h2>Welcome</h2>
-      <p>Select a chapter from the menu.</p>
-    </main>
+  <main class="content">
+    <h2>Welcome</h2>
+    <p>This is the home page.</p>
+    <p>Select a chapter from the left.</p>
+  </main>
 
-  </div>
-
-  <script>
-    function showChapter(number) {
-      const content = document.getElementById("content");
-
-      if (number === 1) {
-        content.innerHTML = "<h2>Chapter 1</h2><p>This is chapter 1 content.</p>";
-      } else if (number === 2) {
-        content.innerHTML = "<h2>Chapter 2</h2><p>This is chapter 2 content.</p>";
-      } else if (number === 3) {
-        content.innerHTML = "<h2>Chapter 3</h2><p>This is chapter 3 content.</p>";
-      }
-    }
-  </script>
+</div>
 
 </body>
 </html>
